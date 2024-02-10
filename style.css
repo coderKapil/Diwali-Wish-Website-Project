@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+}
+
+.jhalar {
+  width: 235px;
+  margin-bottom: -200px;
+}
+.hero-section {
+  background-color: #f99501;
+  /* min-height: 100vh; */
+  background-image: url("./images/orange-backdrop\ 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-section p {
+  font-size: 46.6px;
+  font-family: "Salsa", cursive;
+  max-width: 540px;
+}
+
+.audio-and-para {
+  margin-left: 14rem;
+}
+
+/* this is how we can background color of our audio tag */
+
+audio::-webkit-media-controls-panel {
+  background-color: #fbd8a4;
+  color: #000;
+}
+
+.audio-container {
+  background-color: #fbd8a4;
+  max-width: 500px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  font-family: "Salsa", cursive;
+}
+
+.horizontal-divider {
+  display: flex;
+  max-width: 800px;
+  align-items: center;
+  margin-inline: auto;
+  gap: 12px;
+  margin-bottom: 2.6rem;
+}
+
+.horizontal-line {
+  height: 2px;
+  background-color: #fbd8a4;
+  width: 468px;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: #fbd8a4;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.laxmi-ganesh--section {
+  background-color: #f99501;
+  padding-block: 1em;
+  padding-inline: 1rem;
+}
+
+.laxmi-ganesh-image {
+  max-width: 900px;
+  width: 100%;
+  display: block;
+  margin-inline: auto;
+}
+
+.wish-msg {
+  font-family: "Style Script", cursive;
+  font-size: 70px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.white-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.8rem;
+}
+.white-card {
+  background-color: #fff;
+  display: inline-block;
+  max-width: 500px;
+  padding: 4rem;
+  border-radius: 23px;
+}
+
+.white-card p {
+  font-size: 2rem;
+  font-family: "Salsa", cursive;
+}
+
+.little-girl {
+  max-width: 260px;
+  margin-left: -5rem;
+}
+
+.laxmi-ganesh-card {
+  background-color: #fff6e9;
+  border-radius: 1.5rem;
+  padding: 4rem;
+  max-width: 772px;
+  display: flex;
+  margin-inline: auto;
+}
+
+.laxmi-ganesh-card img {
+  width: 50%;
+}
+.thankyou-text {
+  max-width: 900px;
+  width: 100%;
+  margin-inline: auto;
+}
+.thankyou-text p {
+  font-size: 1.5rem;
+  font-family: "Salsa", cursive;
+}
+.thankyou-text h2 {
+  text-align: left;
+}
+
+.my-name {
+  text-align: right;
+  font-size: 14px;
+  font-family: "Salsa", cursive;
+}
+
+/* media queries */
+@media (max-width: 815px) {
+  .second-deepak,
+  .player-desc,
+  .playing-music {
+    display: none;
+  }
+  .hero-section {
+    background-image: none;
+    background-color: #f99501;
+  }
+  .first-deepak {
+    /* display bock isliye kara kyunki img tag by default inline hota hai aur us par margin auto kaam nahi karta */
+    display: block;
+    margin-left: auto;
+  }
+  .audio-and-para {
+    margin-left: 1rem;
+  }
+  .jhalar {
+    margin-bottom: 0;
+  }
+  .audio-container {
+    max-width: max-content;
+  }
+  .hero-section p {
+    font-size: 32px;
+  }
+  .white-card {
+    padding-block: 1rem;
+    padding-left: 4rem;
+  }
+  .white-card p {
+    font-size: 1.25rem;
+    font-family: "Salsa", cursive;
+  }
+  .little-girl {
+    max-width: 160px;
+  }
+  .laxmi-ganesh-card {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero-section p {
+    font-size: 25px;
+  }
+  .first-deepak {
+    width: 100%;
+    max-width: 226px;
+  }
+  .wish-msg {
+    font-size: 24px;
+  }
+  .white-card p {
+    font-size: 1rem;
+    font-family: "Salsa", cursive;
+  }
+  .white-card {
+    padding-block: 1rem;
+    padding-inline: 4rem;
+  }
+  .white-card {
+    width: 100%;
+    padding-block: 1rem;
+    padding-left: 1.9rem;
+  }
+}
